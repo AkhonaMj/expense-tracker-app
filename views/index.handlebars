@@ -1,0 +1,34 @@
+<form action="/" method="POST">
+  <h1>Expense Tracker App</h1>
+
+  <h2>Add expense</h2>
+
+  <label>Description</label>
+  <input type="text" class="description" name="textDescribe" />
+  <label>Amount</label>
+  <input type="text" class="amount" name="textAmount" />
+
+  <h3>Category</h3>
+
+<label>Daily</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="daily"/>
+
+<label>Weekly</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="weekly"/>
+
+<label>Weekday</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="weekday"/>
+
+<label>Once off</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="onceOff"/>
+
+<label>Monthly</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="monthly"/>
+
+<label>Weekend</label>
+<input type="radio"name="categoryRadio" class="categoryRadio" value="weekend"/>
+  <button type="submit">Add expense</button>
+  <p>Total expenses:{{totalExpense}}</p>
+
+  <h3>Expense summary per Category</h3>
+</form>
