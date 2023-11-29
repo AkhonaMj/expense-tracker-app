@@ -46,6 +46,7 @@ const expense = expenseRoutes(expense_db)//create an instance for the routes fun
 app.get('/', (req, res) => {
     res.render('index'); 
 });
+
 // app.post('/', expense.home)
 
 // app.get('/expense', expense.)
